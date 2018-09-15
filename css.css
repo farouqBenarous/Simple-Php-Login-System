@@ -1,0 +1,15 @@
+.t1{ text-indent: 20%;
+    text-overflow: ellipsis;
+}
+
+.background {
+   background-image: url("img_fjords.jpg");
+    background-size: contain;
+
+}
+
+a:link {color: blue}
+a:visited {color: #932aff}
+a:hover { color: aqua}
+a:active { color: #bec7ff}
+

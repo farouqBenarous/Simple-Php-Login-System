@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="descreption" content="Hi HI dude ">
+    <meta name="keywords" content="html css javascript j querry jason ajax angular  php sql python hibernet spring java ee">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link href="w3cert.gif" rel="icon" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Title - Home</title>
+
+</head>
+<body class ="background">
+<button type="button" class="btn" style="position: absolute; top: 100px; left: 50%;">Basic</button>
+<button type="button" class="btn">Basic</button>
+<button type="button" class="btn btn-default">Default</button>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+
+<div style=" background: #932aff; width: 100px; height: 100px; position: absolute;top: 0px;right: 0px;z-index: 0"></div>
+<div style=" background: #c3f8ff; width: 100px; height: 100px; position: absolute;top: 10px;right: 10px; z-index:1; "></div>
+
+<div style=" background: #ddb1ff; width: 100px; height: 100px; position: absolute;top: 0px;left: 0px "></div>
+<div style=" background: #cfff74; width: 100px; height: 100px; position: absolute;bottom:0px; right: 0px "></div>
+<div style=" background: #0024ff; width: 100px; height: 100px; position: absolute;bottom: 0px;left: 0px "></div>
+<button onclick ="f()">  click me </button>
+
+
+<h1 id="h1">  Test button  </h1>
+<a href="https://www.w3schools.com/js/js_output.asp" target=""> Take me</a>
+
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+<p class="t1"> zi zitoun is the best than H <sub>2</sub>O</p>
+<code> LAtex style  </code>
+
+
+<div style="background-color: #bec7ff; display: inline-block; align-self: right ">
+<pre style='font-size: large; color: #932aff' > this tag will display
+all        the contett that i
+          want with  my spaces   </pre>
+</div>
+<div style="background-color: #ff0009; display: inline-block; " >
+    <code> LAtex style  </code>
+</div>
+
+<dl>
+<dt style="float: right"> title 1  </dt>
+<dd>  desc 1  </dd>
+</dl>
+
+<button style="border-radius: 5px" onclick="clicked()"> Click me </button>
+
+<table cellpadding="10" border=" 1">
+    <tr>
+        <th> first name</th>
+        <th> last name</th>
+    </tr>
+    <tr>
+        <td> farouk</td>
+        <td> beanrous </td>
+    </tr>
+</table>
+<input typse="password"  >
+<textarea rows="4" cols="60" > Report your problem here </textarea>
+<br>
+<iframe width="60%" height="200" frameborder="1" src="https://www.w3schools.com/js/js_comparisons.asp"></iframe>
+
+<p id="coords"> GEo</p>
+<button type="button" onclick="geo()">Show my geo coords</button>
+
+
+<footer>Contact
+<address> hay nasr</address>
+</footer>
+
+<img src="w3cert.gif" style="float: left;background-repeat: round">
+<img src="w3cert.gif" style="float: left">
+<p style="clear: both"> this is the clear attribuete</p>
+<img src="w3cert.gif" style="float: left">
+<img src="w3cert.gif" style="float: left">
+
+<script src ="script.js"> </script>
+<script src ="script2.js"> </script>
+<script src ="geo.js"></script>
+<script>
+    // localStorage
+    localStorage.setItem("lastname", "Smith");
+    // Retrieve
+    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+
+      //sessionStorage
+        sessionStorage.setItem("lastname", "Smith");
+
+        document.getElementById("result").innerHTML = sessionStorage.getItem("lastname");
+
+</script>
+<div id="demo">
+    <h1 style="color: black">Let AJAX change this text</h1>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+
+<script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+
+       // readyState  == 4 means : request finished and response is ready
+        //   status == 200  means : "OK"
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML = this.responseText;}};
+        xhttp.open("GET", "ajax_info.txt", true);
+        xhttp.send();
+    }
+
+    var myCollection = document.getElementsByTagName("p");
+    myCollection.nodeValue
+
+</script>
+
+
+
+</body>
+</html>
