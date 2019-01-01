@@ -1,2 +1,1 @@
-# php_login_sys
-udemy course
+# Simple Php Login System
